@@ -7,7 +7,6 @@ Containers are way to build reproduceable lightweight environment for processes 
 Before talking about containers, is important to know about virtualization:
 
 
-
 Virtualization:
 
 When it comes to virtualization, it need the things below:
