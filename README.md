@@ -1,44 +1,44 @@
-# Docker e Virtualização
+# Docker and Virtualization
 
 ## Docker
 
-Docker usa **containers**. 
+Docker uses **containers**.
 
-Containers são uma maneira de criar ambientes leves e reproduzíveis para a execução de processos.
+Containers are a way to create lightweight, reproducible environments for processes to run.
 
-## Virtualização
+## Virtualization
 
-Antes de falar sobre containers, é importante entender a virtualização:
+Before discussing containers, it's important to understand virtualization:
 
-### O que é Virtualização?
+### What is Virtualization?
 
-A virtualização requer os seguintes componentes:
+Virtualization requires the following components:
 
-- **Host Machine**: Pode ser um PC local, um servidor na nuvem ou um servidor em um data center. É necessário um pedaço de hardware.
-  
-- **Recursos Necessários**: O host machine precisa de componentes que controlam como o hardware funciona, como CPU, Memória e Disco Rígido (I/O).
+- **Host Machine**: This can be a local PC, a server in the cloud, or a server in a data center. A piece of hardware is needed.
 
-### Processo de Virtualização
+- **Required Resources**: The host machine needs components that control how the hardware operates, such as CPU, Memory, and Hard Drive (I/O).
 
-Para iniciar o processo, dividimos pequenos pedaços de cada um desses componentes de hardware e os separamos em uma máquina distinta, chamada **Virtual Machine (VM)**.
+### Virtualization Process
 
-Em uma virtual machine, executamos um sistema operacional completo. Isso é comumente utilizado na nuvem, se você estiver implantando algo na AWS ou em uma instância EC2.
+To start the process, we take small pieces of each of these hardware components and separate them into a distinct machine called a **Virtual Machine (VM)**.
+
+In a virtual machine, we run a complete operating system. This is commonly used in the cloud if you're deploying something to AWS or an EC2 instance.
 
 ### Hypervisor
 
-As virtual machines utilizam um tipo especial de programa que pode executar e gerenciar seu ciclo de vida, chamado **Hypervisor**.
+Virtual machines utilize a special type of program that can run and manage their lifecycle, called a **Hypervisor**.
 
-O hypervisor é responsável pelas virtual machines, gerenciando seu ciclo de vida. Exemplos de hypervisores incluem: **VMWare**, **VirtualBox**.
+The hypervisor is in charge of virtual machines, managing their lifecycle. Examples of hypervisors include **VMWare** and **VirtualBox**.
 
-## Containerização
+## Containerization
 
-Containerização cria um ambiente leve onde processos podem ser executados em um sistema operacional host. Os containers compartilham os mesmos recursos do sistema operacional, mas não podem acessar nada fora de seu ambiente.
+Containerization creates a lightweight environment where processes can run on a host operating system. Containers share the same resources of the operating system but cannot access anything outside of their environment.
 
-O Docker gerencia o ciclo de vida dos containers.
+Docker manages the lifecycle of containers.
 
-## Instalando o Docker
+## Installing Docker
 
-Para instalar o Docker, use o seguinte comando:
+To install Docker, use the following command:
 
 ```bash
 brew install docker
